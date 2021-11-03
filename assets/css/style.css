@@ -21,7 +21,7 @@ header {
 
 h1 {
     font-size: 3em;
-    padding: 20px 20px 20px 20px;
+    
 }
 
 h2 {
@@ -56,6 +56,10 @@ a {
 
 }
 
+p {
+    font-size: 18px;
+}
+
 .text-box {
     margin: 0x;
     padding: 50px 50px;
@@ -63,12 +67,11 @@ a {
     width: 620px;
     height: 220px;
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: 70px;
 }
 
 .text-box p {
-    padding: 0px 20px;
     font-size: 1.5em
 }
 
@@ -95,5 +98,41 @@ a {
     .textbox h2 {
         font-size: 2vw;
     }
-    
+}
+
+.about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0px;
+    background-color: #e7e08b;
+}
+
+.about-picture img {
+    width: 780px;
+    padding: 80px 60px;
+    z-index: 1;
+}
+
+.about-text {
+    background-color: #FAFBEF;
+    height: 200px;
+    width: 620px;
+    z-index: 2;
+    transform: translate(-100px);
+    padding: 80px 60px;
+}
+
+.about-text p {
+    padding: 20px 0px;
+}
+
+@media screen and (max-width: 1300px) {
+    .about {
+        flex-direction: column;
+    }
+    .about-text {
+        transform: translateY(100px);
+    }
 }
