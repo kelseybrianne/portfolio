@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css"
+</head>
+<body>
+    <header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <h1>Kelsey Mailau</h1>
+        <section class="about">
+            <h2 id="about">About</h2>
+            <img src="assets/IMG_0862.JPG" width="600px" alt="A headshot of Kelsey Mailau." 
+            title="Kelsey Mailau portrait">
+            <p>Hi, friends! I am a full-stack developer based in Tacoma, WA. When I'm not designing and building websites, I'm reading self-help books, 
+                shopping at Target, or snuggling with my five-month old baby.
+            </p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p class="portfolio">(Coming soon)</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>I am happy to answer any business related inquiries. Fill out the 
+            form and I'll be in touch as soon as possible.</p>
+            <form>
+                <div>
+                    <label for="name">Name:</label> <br>
+                    <input class="wide-input" id="name" type="text" name="name">
+                    <label for="name"><abbr title="required" aria-label="required">*</abbr></label>
+                </div>
+                <div>
+                    <div><label for="email">Email Address:</label><br>
+                    <input class="wide-input" id="email" type="text" name="email">
+                    <label for="email"><abbr title="required" aria-label="required">*</abbr></label>
+                    </div>
+                <div>
+                    <label for="phone">Phone Number:</label><br>
+                (<input id="phone" name="tel1" type="tel" pattern="[0-9]{3}" aria-label="3-digit area code" size="2"/>) -
+                <input id="phone" name="tel2" type="tel" pattern="[0-9]{3}" aria-label="3-digit prefix" size="2"/> -
+                <input id="phone" name="tel3" type="tel" pattern="[0-9]{4}" aria-label="4-digit number" size="3"/>
+                    </label>>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                     <textarea class="wide-input" id="message" cols="40" rows="5" name="message"></textarea>
+                    <label for="message"><abbr title="required" aria-label="required">*</abbr></label>
+                </div>
+                
+                <div>
+                    <button>Send</button>
+                </div>
+            
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Kelsey Mailau</p>
+    </footer>
+    
+</body>
+</html>

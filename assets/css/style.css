@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray
+}
+
+html {
+    background-image: url("IMG_0843.JPG");
+    background-color: rgb(180, 200, 218);
+}
+
+header {
+    background-color: gray;
+    width: 97%;
+    height: 75px;
+    padding:15px;
+    position: sticky;
+    top: 5px;
+    text-align: right;
+    z-index: 3;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+nav {
+    display: inline-block;
+    margin: auto;
+    position: relative;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    width: 100px;
+    color: white;
+}
+
+main {
+    background-color: white;
+    margin: 10px 150px;
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+    z-index: 2;
+    border: 15px dotted aliceblue
+}
+
+main h1, h2 {
+    color: rgb(59, 59, 59);
+}
+
+p {
+    width: 80%;
+    padding: 10px 70px;
+    text-align: center;
+}
+
+form {
+   text-align: left;
+   padding: 10px 210px;
+}
+
+.portfolio {
+    margin: 50px;
+    padding: 400px 20px;
+    border: 2px solid gray
+}
+
+.wide-input {
+    width: 90%;
+}
