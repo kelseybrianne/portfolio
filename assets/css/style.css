@@ -175,18 +175,32 @@ h2 {
     gap: 70px 50px;
 }
 
-.placeholder {
+.placeholder1 {
     display: flex;
-   
     flex-wrap: wrap;
     flex: 0 0 545px;
     background-color: #d2e4c4;
     height: 285px;
     max-width: 545px;
     min-width: 500px;
+    position: relative;
 }
 
-.placeholder1 {
+.placeholder1 h3 {
+    background-color: #FAFBEF;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Courier New, monospace;
+    font-weight: lighter;
+    padding: 18px;
+    height: 55px;
+    width: 300px;
+    position: absolute;
+    top: 86%;
+    left: 23%;
+}
+
+.placeholder2 {
     display: flex;
    
     flex-wrap: wrap;
@@ -195,9 +209,24 @@ h2 {
     height: 285px;
     max-width: 545px;
     min-width: 400px;
+    position: relative;
 }
 
-.placeholder2 {
+.placeholder2 h3 {
+    background-color: #FAFBEF;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Courier New, monospace;
+    font-weight: lighter;
+    padding: 18px;
+    height: 55px;
+    width: 300px;
+    position: absolute;
+    top: 86%;
+    left: 23%;
+}
+
+.placeholder3 {
     display: flex;
 
     flex-wrap: wrap;
@@ -206,9 +235,24 @@ h2 {
     height: 285px;
     max-width: 545px;
     min-width: 400px;
+    position: relative;
 }
 
-.placeholder3 {
+.placeholder3 h3 {
+    background-color: #FAFBEF;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Courier New, monospace;
+    font-weight: lighter;
+    padding: 18px;
+    height: 55px;
+    width: 300px;
+    position: absolute;
+    top: 86%;
+    left: 23%;
+}
+
+.placeholder4 {
     display: flex;
   
     flex-wrap: wrap;
@@ -217,6 +261,46 @@ h2 {
     height: 285px;
     max-width: 545px;
     min-width: 400px;
+    position: relative;
+}
+
+.placeholder4 h3 {
+    background-color: #FAFBEF;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Courier New, monospace;
+    font-weight: lighter;
+    padding: 18px;
+    height: 55px;
+    width: 300px;
+    position: absolute;
+    top: 86%;
+    left: 23%;
+}
+
+.placeholder5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 545px;
+    background-color: #d2e4c4;
+    height: 285px;
+    max-width: 545px;
+    min-width: 500px;
+    position: relative;
+}
+
+.placeholder5 h3 {
+    background-color: #FAFBEF;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Courier New, monospace;
+    font-weight: lighter;
+    padding: 18px;
+    height: 55px;
+    width: 300px;
+    position: absolute;
+    top: 86%;
+    left: 23%;
 }
 
 form input, textarea {
