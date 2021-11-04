@@ -159,12 +159,12 @@ h2 {
     text-align: center;
     line-height: 2;
     font-size: 2.5rem;
-    padding: 45px 25px 10px;
+    padding: 25px 25px;
 }
 
 .portfolio {
     background-color: #AFB1A9;
-    padding: 40px 40px 80px;
+    padding: 80px 40px 100px;
 } 
 
 .placeholders {
@@ -178,11 +178,11 @@ h2 {
 .placeholder1 {
     display: flex;
     flex-wrap: wrap;
-    flex: 0 0 545px;
+    flex: 0 0 100%;
     background-color: #d2e4c4;
     height: 285px;
-    max-width: 545px;
-    min-width: 500px;
+    max-width: 1130px;
+    min-width: 450px;
     position: relative;
 }
 
@@ -193,22 +193,22 @@ h2 {
     font-family: Courier New, monospace;
     font-weight: lighter;
     padding: 18px;
-    height: 55px;
-    width: 300px;
+    height: 18%;
+    width: 60%;
     position: absolute;
     top: 86%;
-    left: 23%;
+    left: 20%;
 }
 
 .placeholder2 {
     display: flex;
    
     flex-wrap: wrap;
-    flex: 0 0 545px;
+    flex: 0 0 50%;
     background-color: #e4e9b2;
     height: 285px;
     max-width: 545px;
-    min-width: 400px;
+    min-width: 450px;
     position: relative;
 }
 
@@ -219,22 +219,22 @@ h2 {
     font-family: Courier New, monospace;
     font-weight: lighter;
     padding: 18px;
-    height: 55px;
-    width: 300px;
+    height: 18%;
+    width: 60%;
     position: absolute;
     top: 86%;
-    left: 23%;
+    left: 21%;
 }
 
 .placeholder3 {
     display: flex;
 
     flex-wrap: wrap;
-    flex: 0 0 545px;
+    flex: 0 0 50%;
     background-color: #e7e08b;
     height: 285px;
     max-width: 545px;
-    min-width: 400px;
+    min-width: 450px;
     position: relative;
 }
 
@@ -256,7 +256,7 @@ h2 {
     display: flex;
   
     flex-wrap: wrap;
-    flex: 0 0 545px;
+    flex: 0 0 50%;
     background-color: #b5cbb7;
     height: 285px;
     max-width: 545px;
@@ -281,7 +281,7 @@ h2 {
 .placeholder5 {
     display: flex;
     flex-wrap: wrap;
-    flex: 0 0 545px;
+    flex: 0 0 50%;
     background-color: #d2e4c4;
     height: 285px;
     max-width: 545px;
