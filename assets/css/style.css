@@ -57,26 +57,22 @@ a {
 }
 
 h1 {
-    font-size: calc(1.5rem + 2vw);
-    
-}
-
-h1 {
-    font-size: calc(1.5rem + 2vw);
-    
+    font-size: 3rem;
 }
 
 .text-box h2 {
     font-size: 2rem;
     text-align: left;
+    padding: 0px;
 }
 
 .text-box {
     margin: 0x;
-    padding: 50px 50px;
+    padding: 20px;
+   
     background-color: #FAFBEF;
     width: 620px;
-    height: 220px;
+    height: 250px;
     position: absolute;
     top: 120px;
     left: 70px;
@@ -84,7 +80,9 @@ h1 {
 }
 
 .text-box p {
-    font-size: 1.5em
+    font-size: 1.5em;
+    line-height: 1.5;
+    padding: 10px 0px 0px;
 }
 
 @media screen and (max-width: 800px) {
@@ -115,6 +113,12 @@ h1 {
     display: relative;
 }
 
+h2 {
+    text-align: center;
+    line-height: 2;
+    font-size: 2.5rem;
+}
+
 .about {
     display: flex;
     flex-direction: row-reverse;
@@ -133,16 +137,17 @@ h1 {
 
 .about-text {
     background-color: #FAFBEF;
-    height: 200px;
+    height: 280px;
     width: 620px;
     z-index: 2;
     transform: translate(-100px);
-    padding: 80px 60px;
+    padding: 30px;
     box-shadow: 5px -2px 50px #665E15;
 }
 
 .about-text p {
     padding: 20px 0px;
+    line-height: 1.5
 }
 
 @media screen and (max-width: 1300px) {
@@ -153,13 +158,6 @@ h1 {
         transform: translateY(100px);
         width: 500px;
     }
-}
-
-h2 {
-    text-align: center;
-    line-height: 2;
-    font-size: 2.5rem;
-    padding: 25px 25px;
 }
 
 .portfolio {
@@ -182,7 +180,7 @@ h2 {
     background-color: #d2e4c4;
     height: 285px;
     max-width: 1130px;
-    min-width: 450px;
+    min-width: 500px;
     position: relative;
 }
 
@@ -208,7 +206,7 @@ h2 {
     background-color: #e4e9b2;
     height: 285px;
     max-width: 545px;
-    min-width: 450px;
+    min-width: 500px;
     position: relative;
 }
 
@@ -234,7 +232,7 @@ h2 {
     background-color: #e7e08b;
     height: 285px;
     max-width: 545px;
-    min-width: 450px;
+    min-width: 500px;
     position: relative;
 }
 
@@ -260,7 +258,7 @@ h2 {
     background-color: #b5cbb7;
     height: 285px;
     max-width: 545px;
-    min-width: 400px;
+    min-width: 500px;
     position: relative;
 }
 
