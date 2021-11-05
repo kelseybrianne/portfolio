@@ -150,7 +150,7 @@ h2 {
     gap: 70px 50px;
 }
 
-.placeholder1 {
+.placeholder-large {
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 100%;
@@ -160,11 +160,11 @@ h2 {
     position: relative;
 }
 
-.placeholder1:hover {
+.placeholder:hover {
     background: rgba(248, 214, 215, .5);
 }
 
-.placeholder1 h3 {
+.placeholder-large h3 {
     background-color: #FAFBEF;
     font-size: 1.3rem;
     text-align: center;
@@ -178,9 +178,8 @@ h2 {
     left: 20%;
 }
 
-.placeholder2 {
+.placeholder {
     display: flex;
-   
     flex-wrap: wrap;
     flex: 0 0 50%;
     background-color: #AFB1A9;
@@ -189,11 +188,11 @@ h2 {
     position: relative;
 }
 
-.placeholder2:hover {
+.placeholder-large:hover {
     background: rgba(248, 214, 215, .5);
 }
 
-.placeholder2 h3 {
+.placeholder h3 {
     background-color: #FAFBEF;
     font-size: 1.3rem;
     text-align: center;
@@ -205,92 +204,6 @@ h2 {
     position: absolute;
     top: 86%;
     left: 21%;
-}
-
-.placeholder3 {
-    display: flex;
-
-    flex-wrap: wrap;
-    flex: 0 0 50%;
-    background-color: #e7e08b;
-    height: 285px;
-    max-width: 545px;
-    position: relative;
-}
-
-.placeholder3:hover {
-    background: rgba(248, 214, 215, .5);
-}
-
-.placeholder3 h3 {
-    background-color: #FAFBEF;
-    font-size: 1.3rem;
-    text-align: center;
-    font-family: Courier New, monospace;
-    font-weight: lighter;
-    padding: 18px;
-    height: 18%;
-    width: 60%;
-    position: absolute;
-    top: 86%;
-    left: 23%;
-}
-
-.placeholder4 {
-    display: flex;
-  
-    flex-wrap: wrap;
-    flex: 0 0 50%;
-    background-color: #b5cbb7;
-    height: 285px;
-    max-width: 545px;
-    position: relative;
-}
-
-.placeholder4:hover {
-    background: rgba(248, 214, 215, .5);
-}
-
-.placeholder4 h3 {
-    background-color: #FAFBEF;
-    font-size: 1.3rem;
-    text-align: center;
-    font-family: Courier New, monospace;
-    font-weight: lighter;
-    padding: 18px;
-    height: 18%;
-    width: 60%;
-    position: absolute;
-    top: 86%;
-    left: 23%;
-}
-
-.placeholder5 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 50%;
-    background-color: #AFB1A9;
-    height: 285px;
-    max-width: 545px;
-    position: relative;
-}
-
-.placeholder5:hover {
-    background: rgba(248, 214, 215, .5);
-}
-
-.placeholder5 h3 {
-    background-color: #FAFBEF;
-    font-size: 1.3rem;
-    text-align: center;
-    font-family: Courier New, monospace;
-    font-weight: lighter;
-    padding: 18px;
-    height: 18%;
-    width: 60%;
-    position: absolute;
-    top: 86%;
-    left: 23%;
 }
 
 form input, textarea {
@@ -307,11 +220,12 @@ form input, textarea {
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 880px) {
     .text-box {
         position: static;
         width: 100%;
         margin: 0px; 
+        box-shadow: none;
     }
     p {
         font-size: 1.1rem;
@@ -324,15 +238,28 @@ form input, textarea {
     .textbox h2 {
         font-size: 5rem;
     }
+
+    .about {
+        padding: 0px;
+    }
     
     .about img{
         width: 100%;
         padding: 0px;
-        margin: 50px 0px;
+        margin: 150px 0px 80px;
     }
 
     .about-text {
-        width: 100%
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .portfolio h2{
+        margin-top: 50px;
+    }
+
+    .placeholder {
+        flex: 0 0 100%;
     }
 }
 
@@ -408,5 +335,17 @@ form input, textarea {
     .about img {
         padding: 50px 20px;
 
+    }
+    
+    .portfolio h2 {
+        font-size: 7vw;
+    }
+
+    .placeholder-large h3 {
+        font-size: 3.5vw;
+    }
+
+    .placeholder h3 {
+        font-size: 3.5vw;
     }
 }
