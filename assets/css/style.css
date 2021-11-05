@@ -85,25 +85,6 @@ h1 {
     padding: 10px 0px 0px;
 }
 
-@media screen and (max-width: 800px) {
-    .text-box {
-        position: static;
-        width: 100%;
-        margin: 0px; 
-    }
-    p {
-        font-size: 1.1rem;
-    }
-
-    .textbox h1 {
-        font-size: calc(1.5rem + 3vw);
-    }
-
-    .textbox h2 {
-        font-size: 5rem;
-    }
-}
-
 .background-picture {
     height: 800px;
     width: 100%;
@@ -124,13 +105,13 @@ h2 {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding: 0px 0px;
+    padding: 100px 0px;
     background-color: #e7e08b;
     box-shadow: 0px -5px 60px #4C6B4F
 }
 
 .about-picture img {
-    width: 780px;
+    max-width: 820px;
     padding: 80px 80px;
     z-index: 1;
 }
@@ -150,20 +131,16 @@ h2 {
     line-height: 1.5
 }
 
-@media screen and (max-width: 1300px) {
-    .about {
-        flex-direction: column;
-    }
-    .about-text {
-        transform: translateY(100px);
-        width: 500px;
-    }
-}
+
 
 .portfolio {
-    background-color: #AFB1A9;
+    background-color: #e4e9b2;
     padding: 80px 40px 100px;
 } 
+
+.portfolio h2 {
+    padding: 30px 0px;
+}
 
 .placeholders {
     display: flex;
@@ -180,8 +157,11 @@ h2 {
     background-color: #d2e4c4;
     height: 285px;
     max-width: 1130px;
-    min-width: 500px;
     position: relative;
+}
+
+.placeholder1:hover {
+    background: rgba(248, 214, 215, .5);
 }
 
 .placeholder1 h3 {
@@ -203,11 +183,14 @@ h2 {
    
     flex-wrap: wrap;
     flex: 0 0 50%;
-    background-color: #e4e9b2;
+    background-color: #AFB1A9;
     height: 285px;
     max-width: 545px;
-    min-width: 500px;
     position: relative;
+}
+
+.placeholder2:hover {
+    background: rgba(248, 214, 215, .5);
 }
 
 .placeholder2 h3 {
@@ -232,8 +215,11 @@ h2 {
     background-color: #e7e08b;
     height: 285px;
     max-width: 545px;
-    min-width: 500px;
     position: relative;
+}
+
+.placeholder3:hover {
+    background: rgba(248, 214, 215, .5);
 }
 
 .placeholder3 h3 {
@@ -243,8 +229,8 @@ h2 {
     font-family: Courier New, monospace;
     font-weight: lighter;
     padding: 18px;
-    height: 55px;
-    width: 300px;
+    height: 18%;
+    width: 60%;
     position: absolute;
     top: 86%;
     left: 23%;
@@ -258,8 +244,11 @@ h2 {
     background-color: #b5cbb7;
     height: 285px;
     max-width: 545px;
-    min-width: 500px;
     position: relative;
+}
+
+.placeholder4:hover {
+    background: rgba(248, 214, 215, .5);
 }
 
 .placeholder4 h3 {
@@ -269,8 +258,8 @@ h2 {
     font-family: Courier New, monospace;
     font-weight: lighter;
     padding: 18px;
-    height: 55px;
-    width: 300px;
+    height: 18%;
+    width: 60%;
     position: absolute;
     top: 86%;
     left: 23%;
@@ -280,11 +269,14 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 50%;
-    background-color: #d2e4c4;
+    background-color: #AFB1A9;
     height: 285px;
     max-width: 545px;
-    min-width: 500px;
     position: relative;
+}
+
+.placeholder5:hover {
+    background: rgba(248, 214, 215, .5);
 }
 
 .placeholder5 h3 {
@@ -294,8 +286,8 @@ h2 {
     font-family: Courier New, monospace;
     font-weight: lighter;
     padding: 18px;
-    height: 55px;
-    width: 300px;
+    height: 18%;
+    width: 60%;
     position: absolute;
     top: 86%;
     left: 23%;
@@ -303,4 +295,118 @@ h2 {
 
 form input, textarea {
     background-color: #FAFBEF;
+}
+
+@media screen and (max-width: 1300px) {
+    .about {
+        flex-direction: column;
+    }
+    .about-text {
+        transform: translateY(100px);
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .text-box {
+        position: static;
+        width: 100%;
+        margin: 0px; 
+    }
+    p {
+        font-size: 1.1rem;
+    }
+
+    .textbox h1 {
+        font-size: calc(1.5rem + 3vw);
+    }
+
+    .textbox h2 {
+        font-size: 5rem;
+    }
+    
+    .about img{
+        width: 100%;
+        padding: 0px;
+        margin: 50px 0px;
+    }
+
+    .about-text {
+        width: 100%
+    }
+}
+
+.background-picture {
+    height: 800px;
+    width: 100%;
+    background-image: url("../images/desk-space.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: relative;
+}
+
+@media screen and (max-width: 550px) {
+    .background-picture {
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #C8DCC9;
+        height: 380px;
+    }
+
+    .text-box {
+        box-shadow: none;
+        text-align: center;
+        height: 150px;
+        background-color: #C8DCC9;
+    }
+
+    .text-box h1 {
+        font-size: 9vw;
+        text-align: left;
+    }
+
+    .text-box h2 {
+        font-size: 7vw;
+        text-align: center;
+        text-align: left;
+    }
+
+    .text-box p {
+        font-size: 5.3vw;
+        text-align: left;
+        width: 65%;
+    }
+
+    li {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .about {
+        padding: 0px;
+        height: 570px;
+    }
+
+    .about-text {
+        height: 350px;
+        box-shadow: none;
+        background-color: #e7e08b;
+    }
+
+    .about-text h2 {
+        font-size: 7vw;
+        text-align: left;
+    }
+
+    .about-text p {
+        font-size: 4.5vw;
+        padding-top: 0px;
+    }
+
+    .about img {
+        padding: 50px 20px;
+
+    }
 }
