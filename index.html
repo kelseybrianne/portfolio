@@ -67,33 +67,34 @@
             <h2>Contact</h2>
             <p>I am happy to answer any business related inquiries. Fill out the 
             form and I'll be in touch as soon as possible.</p>
-            <form class="form">
-                <div>
-                    <label for="name">Name:</label> <br>
-                    <input class="wide-input" id="name" type="text" name="name" class=>
-                    <label for="name"><abbr title="required" aria-label="required">*</abbr></label>
-                </div>
-                <div>
-                    <div><label for="email">Email Address:</label><br>
-                    <input class="wide-input" id="email" type="text" name="email" class="input">
-                    <label for="email"><abbr title="required" aria-label="required">*</abbr></label>
+            <div class="form-box">
+                <form>
+                    <div class="question">
+                        <label for="name">Name:</label> <br>
+                        <input class="wide-input" id="name" type="text" name="name" class=>
+                        <label for="name"><abbr title="required" aria-label="required"></abbr></label>
                     </div>
-                <div>
-                    <label for="message">Message:</label>
-                     <textarea class="wide-input" id="message" cols="40" rows="5" name="message"></textarea>
-                    <label for="message"><abbr title="required" aria-label="required">*</abbr></label>
-                </div>
-                
-                <div>
-                    <button>Send</button>
-                </div>
-            
-            </form>
+                    <div class="question">
+                        <div><label for="email">Email Address:</label><br>
+                        <input class="wide-input" id="email" type="text" name="email" class="input">
+                        <label for="email"><abbr title="required" aria-label="required"></abbr></label>
+                        </div>
+                    <div class="question">
+                        <label for="message">Message:</label>
+                         <textarea class="wide-input" id="message" cols="40" rows="5" name="message"></textarea>
+                        <label for="message"><abbr title="required" aria-label="required"></abbr></label>
+                    </div>
+                    
+                    <div class="send">
+                        <button class="button">Send</button>
+                    </div>
+                </form>
+            </div>
 
         </section>
     </main>
     <footer>
-        <p>&copy; Kelsey Mailau</p>
+        <p>&copy; Kelsey Mailau 2021</p>
     </footer>
     
 </body>
