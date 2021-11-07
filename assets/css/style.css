@@ -4,57 +4,52 @@
     font-family: "spartan", sans-serif;
 }
 
+:root {
+    --dark: #343531;
+    --light: #FAFBEF;
+    --light-yellow: #e4e9b2;
+    --dark-yellow: #e7e08b;
+    --light-green: #d2e4c4;
+    --dark-green: #b5cbb7;
+}
+
 html {
     font-size: 16px;
 }
 
 body {
-    font-family: Calibri, Helvetica, sans-serif;
-    color: #343531;
-    background-color: #FAFBEF;
-    padding: 0px;
-    margin: 0px;
+    color: var(--dark);
 }
 
 header {
-    background-color: #e4e9b2;
-    margin: 0x;
-    padding: 0x;
-    position: relative;
+    background-color: var(--light-yellow);
     height: 160px;
-}
-
-nav {
-    display: flex;
 }
 
 ul {
     list-style-type: none;
-    width: 100%;
     text-align: right;
 }
 
 li {
-    border: 20px;
     font-size: 1.3rem;
     display: inline-block;
-    padding: 65px 70px 50px 0px;
+    padding: 40px 50px 50px 0px;
 }
 
 li:hover, li:focus {
-    color: #FAFBEF;
-    text-shadow: 5px 5px 10px #343531;
+    color: var(--light);
+    text-shadow: 5px 5px 10px var(--dark);
 }
 
 li:active {
-    color: #FAFBEF;
+    color: var(--light);
     text-shadow: none;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-    width: 140px;
 }
 
 h1 {
@@ -87,9 +82,8 @@ p {
 }
 
 .text-box {
-    margin: 0x;
     padding: 55px 40px;
-    background-color: #FAFBEF;
+    background-color: var(--light);
     width: 620px;
     height: 250px;
     position: absolute;
@@ -103,8 +97,6 @@ p {
     width: 100%;
     background-image: url("../images/desk-space.jpg");
     background-size: cover;
-    background-position: bottom;
-    display: relative;
 }
 
 .about {
@@ -113,7 +105,7 @@ p {
     justify-content: center;
     align-items: center;
     padding: 100px 0px;
-    background-color: #e7e08b;
+    background-color: var(--dark-yellow);
     box-shadow: 0px -5px 60px #4C6B4F
 }
 
@@ -128,7 +120,7 @@ p {
 }
 
 .about-text {
-    background-color: #FAFBEF;
+    background-color: var(--light);
     height: 300px;
     width: 620px;
     z-index: 2;
@@ -138,7 +130,7 @@ p {
 }
 
 .portfolio {
-    background-color: #e4e9b2;
+    background-color: var(--light-yellow);
     padding: 80px 40px 100px;
 } 
 
@@ -159,27 +151,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 100%;
-    background-color: #d2e4c4;
+    background-color: var(--light-green);
     height: 285px;
     max-width: 1130px;
     position: relative;
-}
-
-.placeholder:hover {
-    background: rgba(248, 214, 215, .5);
-}
-
-.placeholder-large h3 {
-    background-color: #FAFBEF;
-    font-size: 1.3rem;
-    text-align: center;
-    font-weight: lighter;
-    padding: 10px;
-    height: 18%;
-    width: 60%;
-    position: absolute;
-    top: 86%;
-    left: 20%;
 }
 
 .placeholder {
@@ -192,12 +167,12 @@ p {
     position: relative;
 }
 
-.placeholder-large:hover {
+.placeholder:hover {
     background: rgba(248, 214, 215, .5);
 }
 
-.placeholder h3 {
-    background-color: #FAFBEF;
+.placeholder-large h3, .placeholder h3 {
+    background-color: var(--light);
     font-size: 1.3rem;
     text-align: center;
     font-weight: lighter;
@@ -206,11 +181,16 @@ p {
     width: 60%;
     position: absolute;
     top: 86%;
-    left: 21%;
+    left: 20%;
 }
 
+.placeholder-large:hover {
+    background: rgba(248, 214, 215, .5);
+}
+
+
 .contact{
-    background-color: #b5cbb7;
+    background-color: var(--dark-green);
     padding: 100px 0px;
 }
 
@@ -228,8 +208,8 @@ p {
 input, textarea, button {
     width: 100% !important;
     padding: 10px 0px;
-    background-color: #FAFBEF;
-    border: 1px solid #e4e9b2;
+    background-color: var(--light);
+    border: 1px solid var(--light-yellow);
 }
 
 form {
@@ -245,7 +225,7 @@ form {
  }
 
  button {
-     background-color: #d2e4c4;
+     background-color: var(--light-green);
  }
 
  button:hover, button:active {
@@ -256,9 +236,39 @@ form {
      box-shadow: inset 0 0 10px #94B396;
  }
 
+ .contact-me {
+     text-align: center;
+     background-color: var(--dark-green);
+     padding: 80px;
+ }
+
+ .border {
+     border: 3px dotted var(--light-green);
+     border-radius: 10px;
+     width: 400px;
+     margin: auto;
+     height: 200px;
+
+ }
+
+ .contact-me h2 {
+     padding: 10px;
+     margin: -35px auto 0px;
+     background-color: var(--dark-green);
+     width: 200px;
+ }
+
+ .contact-me p {
+     padding: 8px 0px 2px;
+ } 
+
+ .contact-me a {
+     text-decoration: underline;
+ }
+
  footer {
      padding: 50px;
-     background-color: #e7e08b;
+     background-color: var(--dark-yellow);
      text-align: center;
  }
 
@@ -328,6 +338,10 @@ form {
     p {
         font-size: 4.0vw;
     }
+
+    h2 {
+        font-size: 7vw;
+    }
     
     .background-picture {
         background-size: 100%;
@@ -349,7 +363,6 @@ form {
     }
 
     .text-box h2 {
-        font-size: 7vw;
         text-align: center;
         text-align: left;
     }
@@ -368,11 +381,10 @@ form {
     .about-text {
         height: 350px;
         box-shadow: none;
-        background-color: #e7e08b;
+        background-color: var(--dark-yellow);
     }
 
     .about-text h2 {
-        font-size: 7vw;
         text-align: left;
     }
 
@@ -380,10 +392,6 @@ form {
         padding: 50px 20px;
         margin: 50px 0px 100px;
 
-    }
-    
-    .portfolio h2 {
-        font-size: 7vw;
     }
 
     .placeholder-large h3 {
@@ -397,5 +405,13 @@ form {
     form {
         width: 100%;
         height: 100%;
+    }
+
+    .border {
+        width: 100%;
+    }
+
+    .border h2 {
+        width: 80%;
     }
 }
