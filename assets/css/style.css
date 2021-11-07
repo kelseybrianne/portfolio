@@ -81,6 +81,7 @@ p {
     font-size: 1rem;
 }
 
+/* Introductory statement at the top of the page */
 .text-box {
     padding: 55px 40px;
     background-color: var(--light);
@@ -99,6 +100,7 @@ p {
     background-size: cover;
 }
 
+/* About me page */
 .about {
     display: flex;
     flex-direction: row-reverse;
@@ -129,6 +131,7 @@ p {
     box-shadow: 5px -2px 50px #665E15;
 }
 
+/* Portfolio section */
 .portfolio {
     background-color: var(--light-yellow);
     padding: 80px 40px 100px;
@@ -188,7 +191,7 @@ p {
     background: rgba(248, 214, 215, .5);
 }
 
-
+/* Contact form that will be added later (backend functionality pending) */
 .contact{
     background-color: var(--dark-green);
     padding: 100px 0px;
@@ -236,6 +239,7 @@ form {
      box-shadow: inset 0 0 10px #94B396;
  }
 
+ /* Section featuring four different ways of contacting me */
  .contact-me {
      text-align: center;
      background-color: var(--dark-green);
@@ -272,6 +276,7 @@ form {
      text-align: center;
  }
 
+ /* When screen width is less than or equal to 1300px */
 @media screen and (max-width: 1300px) {
     .about {
         flex-direction: column;
@@ -282,6 +287,7 @@ form {
     }
 }
 
+/* When screen width is less than or equal to 880px */
 @media screen and (max-width: 880px) {
     .text-box {
         position: static;
@@ -334,6 +340,7 @@ form {
     display: relative;
 }
 
+/* When screen width is less than or equal to 550px */
 @media screen and (max-width: 550px) {
     p {
         font-size: 4.0vw;
