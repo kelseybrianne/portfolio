@@ -154,9 +154,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 100%;
-    background-image: url("/assets/images/password-generator.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color: var(--light-green);
     height: 285px;
     max-width: 1130px;
     position: relative;
@@ -190,7 +188,7 @@ p {
 }
 
 .placeholder-large:hover {
-    opacity: 50%;
+    background: rgba(248, 214, 215, .5);
 }
 
 /* Contact form that will be added later (backend functionality pending) */
