@@ -91,6 +91,8 @@ p {
     top: 120px;
     left: 70px;
     box-shadow: 12px 12px 50px #4C6B4F;
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
 }
 
 .background-picture {
@@ -98,6 +100,7 @@ p {
     width: 100%;
     background-image: url("../images/desk-space.jpg");
     background-size: cover;
+    min-height: 100vh;
 }
 
 /* About me page */
@@ -108,7 +111,8 @@ p {
     align-items: center;
     padding: 100px 0px;
     background-color: var(--dark-yellow);
-    box-shadow: 0px -5px 60px #4C6B4F
+    box-shadow: 0px -5px 60px #4C6B4F;
+    min-height: 100vh;
 }
 
 .about h2 {
@@ -131,10 +135,19 @@ p {
     box-shadow: 5px -2px 50px #665E15;
 }
 
+.about-picture img {
+    display: none;
+}
+
+.about-picture img:first-of-type {
+    display:block;
+}
+
 /* Portfolio section */
 .portfolio {
     background-color: var(--light-yellow);
     padding: 80px 40px 100px;
+    min-height: 100vh;
 } 
 
 .portfolio h2 {
@@ -192,9 +205,11 @@ p {
 }
 
 /* Contact form that will be added later (backend functionality pending) */
-.contact{
+.contact-me {
     background-color: var(--dark-green);
     padding: 100px 0px;
+    min-height: 100vh;
+    display: flex;
 }
 
 .contact h2 {
@@ -245,6 +260,15 @@ form {
      background-color: var(--dark-green);
      padding: 80px;
  }
+
+ /* .fade-in {
+     opacity: 0;
+     transition: opacity 250ms ease-in;
+ }
+
+ .fade-in.appear {
+     opacity: 1;
+ } */
 
  .border {
      border: 3px dotted var(--light-green);
