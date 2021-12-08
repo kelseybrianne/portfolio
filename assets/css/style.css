@@ -5,8 +5,8 @@
 }
 
 :root {
-    --text: #343531;
-    --white: white;
+    --text: white;
+    --white: #b08968;
     --lighter: #ede0d4;
     --light: #ddb892;
     --medium: #ddb892;
@@ -25,7 +25,7 @@ body {
 
 header {
     background-color: var(--white);
-    height: 160px;
+    height: 10vh;
 }
 
 ul {
@@ -84,13 +84,13 @@ p {
 
 /* Introductory statement at the top of the page */
 .intro {
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     background-color: var(--white);
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
 }
 
 /* About me page */
@@ -101,7 +101,6 @@ p {
     align-items: center;
     padding: 100px 0px;
     background-color: var(--white);
-    /* box-shadow: 0px -5px 60px #4C6B4F; */
     min-height: 100vh;
 }
 
@@ -110,23 +109,19 @@ p {
 }
 
 .about-picture img {
-
-    height: 800px;
-    padding: 60px 80px;
+    width: 700px;
+    padding-left: 80px;
 }
 
 .about-text {
-    background-color: var(--dark);
     height: 500px;
     width: 620px;
     z-index: 8;
-    transform: translate(-100px);
-    padding: 0px 30px;
-    /* box-shadow: 5px -2px 50px #665E15; */
+    padding: 0px 80px 0px 20px;
 }
 
 /* Portfolio section */
-.portfolio {
+/* .portfolio {
     background-color: var(--white);
     padding: 80px 40px 100px;
     min-height: 100vh;
@@ -197,7 +192,7 @@ p {
 .portfolio-item img:hover {
     opacity: 50%;
 
-}
+} */
 
 /* Contact form that will be added later (backend functionality pending) */
 .contact-me {
@@ -253,7 +248,7 @@ form {
  .contact-me {
      text-align: center;
      background-color: var(--white);
-     padding: 80px;
+     padding: 200px;
  }
 
  /* .fade-in {
@@ -268,15 +263,15 @@ form {
  .border {
      border: 3px dotted var(--lighter);
      border-radius: 10px;
-     width: 400px;
+     width: 800px;
      margin: auto;
-     height: 200px;
+     height: 400px;
 
  }
 
  .contact-me h2 {
      padding: 10px;
-     margin: -35px auto 0px;
+     margin: -35px auto 95px;
      background-color: var(--white);
      width: 200px;
  }
@@ -291,7 +286,7 @@ form {
 
  footer {
      padding: 50px;
-     background-color: var(--lighter);
+     background-color: var(--white);
      text-align: center;
  }
 
@@ -300,9 +295,14 @@ form {
     .about {
         flex-direction: column;
     }
+
+    .about-picture img {
+        padding: 0px 20px;
+    }
     .about-text {
-        transform: translateY(100px);
-        width: 500px;
+        margin: 0px 200px;
+        padding: 20px;
+        /* width: 500px; */
     }
 }
 
