@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Kelsey Mailau</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,16 +15,29 @@
 </head>
 <body>
     <header>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                    <!-- Javascript functionality pending <li><i class="fas fa-bars"></i></li> -->
-                </ul>
-            </nav>
-        </section>
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <!-- <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+              </a> -->
+                <a role="button" class="navbar-burger m-5 has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <li><a href="#about" class="navbar-item navbar-link has-text-white hoverme is-tab">About</a></li>
+                    <li><a href="#portfolio" class="navbar-item has-text-white is-tab">Portfolio</a></li>
+                    <li><a href="#contact-me" class="navbar-item has-text-white is-tab">Contact Me</a></li>
+                </div>
+                  
+                 
+            </div>
+        </nav>
     </header>
     <section class="intro">
         <h2>Hey there!</h2>
@@ -37,7 +51,7 @@
             </div>
             <div class="about-text">
                 <h2 id="about">About</h2>
-                <p>I'm a full-stack web developer with a passionate work-ethic looking to build a more intuitive user experience on the web. I recently received a certificate in full-stack web development from the University of Washington Coding Bootcamp, with newly developed experience in Javscript, CSS, jQuery, and responsive web design. Known for learning quickly, meeting deadlines, and working reliably and honestly, I make a powerful addition to any team. I'm highly motivated and goal-oriented, fiercely taking on any challenge presented to me. Through improved SEO and web page accessibility, both modern and responsive web design, and friendly user-interfaces, I look forward to helping companies increase their profits by increasing traffic to their online platforms, as well as popularity by being seen by an audience they deserve. 
+                <p>I'm a full-stack web developer with a passionate work-ethic looking to build a more intuitive user experience on the web. I recently received a certificate in full-stack web development from the University of Washington Coding Bootcamp, with newly developed experience in Javscript, CSS, jQuery, and responsive web design. Known for learning quickly, meeting deadlines, and working reliably and honestly, I make a powerful addition to any team. I'm highly organized, motivated and goal-oriented, fiercely taking on any challenge presented to me. Through improved SEO and web page accessibility, both modern and responsive web design, and friendly user-interfaces, I look forward to helping companies increase their profits by increasing traffic to their online platforms, as well as popularity by being seen by an audience they deserve. 
                 </p>
             </div>
         </section>
@@ -45,23 +59,26 @@
         <section class="portfolio" id="portfolio">
             <h2>Portfolio</h2>
             <div class="placeholders">
-                <a href="https://kelseybrianne.github.io/password-generator/" target="_blank" class="placeholder-large"><div>
-                    <h3>Password Generator</h3>
-                </div></a>
-                <a href="https://kelseybrianne.github.io/day-planner/" target="_blank" class="portfolio-item day-planner">
+                <!-- <a href="https://kelseybrianne.github.io/password-generator/" target="_blank" class="placeholder-large"><div> -->
+                <a href="https://kelseybrianne.github.io/password-generator/" id="central-project" target="_blank" class="placeholder">
                     <img src="assets/images/Screen Shot 2021-12-01 at 3.53.27 PM.png">
                     <div>
-                        <h3>Work Day Planner</h3>
+                        <h3></h3>
+                    </div>
+                </a>
+                <a href="https://kelseybrianne.github.io/day-planner/" target="_blank" class="portfolio-item day-planner">
+                    <div>
+                        <h3></h3>
                     </div>
                 </a>
                 <a href="https://kelseybrianne.github.io/prework-about-me/" target="_blank" class="portfolio-item placeholder about-me"><div>
-                    <h3>About Me</h3>
+                    <h3></h3>
                 </div></a>
                 <a href="https://github.com/kelseybrianne" target="_blank" class="portfolio-item placeholder github"><div>
-                    <h3>GitHub</h3>
+                    <h3></h3>
                 </div></a>
                 <a href="https://www.linkedin.com/in/kelseybrianne/" target="_blank" class="portfolio-item placeholder linked-in"><div>
-                    <h3>LinkedIn</h3>
+                    <h3></h3>
                 </div></a>
             </div>
         </section>
