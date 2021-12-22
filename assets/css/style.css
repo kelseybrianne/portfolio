@@ -5,8 +5,8 @@
 }
 
 :root {
-    --text: white;
-    --white: #b08968;
+    --text: #412d20;
+    --white: #ede0d4;
     --lighter: #ede0d4;
     --light: #ddb892;
     --medium: #ddb892;
@@ -46,24 +46,24 @@ h1 {
     font-size: 3rem;
     font-family: "spartan", sans-serif;
     line-height: 1.8;
+    color: white;
    
 }
 
-h2 {
+h2, h3 {
     font-family: "Oswald", sans-serif;
     letter-spacing: .1em;
-    font-size: 2rem;
     text-transform: uppercase;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 h3 {
-    font-family: "Oswald", sans-serif;
-    letter-spacing: .1em;
-    font-size: 1rem;
-    text-transform: uppercase;
-    line-height: 1.6;
-    text-align: left;
+    font-size: 1.2rem;
 }
 
 p {
@@ -109,9 +109,11 @@ p {
     padding: 0px 80px 0px 20px;
 }
 
+
+
 /* Portfolio section */
 /* .portfolio {
-    background-color: var(--white);
+    background-color: var(--lighter);
     padding: 80px 40px 100px;
     min-height: 100vh;
 } 
@@ -119,9 +121,9 @@ p {
 .portfolio h2 {
     text-align: center;
     padding: 30px 0px;
-}
+} */
 
-.placeholders {
+/* .placeholders {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -180,7 +182,7 @@ p {
 
 .portfolio-item img:hover {
     opacity: 50%;
-
+    
 } */
 
 .portfolio {
@@ -191,6 +193,10 @@ p {
     align-items: center;
 }
 
+.jumbo-custom {
+    background-color: white;
+    min-height: 70vh;
+}
 .placeholders {
     display: flex;
     position: relative;
