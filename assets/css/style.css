@@ -21,6 +21,7 @@ html {
 
 body {
     color: var(--text);
+    background-color: var(--white);
 }
 
 header {
@@ -116,14 +117,21 @@ p {
 
 .portfolio {
     min-height: 100vh;
-    background-color: var(--white);
+}
+
+.project {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .portfolio h1 {
     font-size: 35px;
+}
+
+.portfolio h2 {
+    text-align: center;
 }
 
 .jumbo-custom {
@@ -131,10 +139,12 @@ p {
     min-height: 70vh;
     width: 80vw;
     transform: translateY(-50px);
+    padding: 20px;
 }
 
-.portfolio img {
-    padding: 20px;
+.small-text {
+    font-size: 11px;
+    
 }
 
 @media screen and (min-width: 720px) {
@@ -158,6 +168,19 @@ p {
         min-height: 800px;
         padding: 200px 150px 300px 200px;
         /* z-index: 1; */
+    }
+
+    .jumbo-custom {
+        margin: 100px 0px 0px 0px; 
+        padding: 50px 50px 150px 50px;
+    }
+    .project {
+        flex-direction: column-reverse;
+    }
+    .portfolio img {
+        width: 600px;
+        transform: translateY(-200px) translateX(160px);
+        z-index: 2;
     }
 }
 
