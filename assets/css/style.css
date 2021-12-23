@@ -174,15 +174,18 @@ a:hover {
 }
 
 .contact-me {
-    padding: 20px;
+    padding: 100px 20px;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
 }
 
 .contact-info {
     background-color: white;
-    padding: 100px;
-    transform: translateX(-150px);
+    padding: 60px;
+    transform: translateY(80px);
+    width: 80vw;
+    max-width: max-content;
 }
 
 .contact-info h2 {
@@ -225,12 +228,22 @@ a:hover {
 
     }
 
+    .contact-me {
+        flex-direction: row;
+    }
+
     .contact-me img {
         width: 100%;
         max-width: 60vw;
-        height: 900px;
+        height: 100vh;
         object-fit: cover;
         object-position: 0 70%;
+    }
+
+    .contact-info {
+        padding: 100px;
+        max-width: max-content;
+        transform: translateX(-150px);
     }
 }
 
