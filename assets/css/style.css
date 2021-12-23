@@ -72,6 +72,11 @@ p {
     font-size: 1rem;
 }
 
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Introductory statement at the top of the page */
 .intro {
     min-height: 90vh;
