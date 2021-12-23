@@ -107,11 +107,34 @@ p {
 }
 
 .about-text {
-    height: 60vh;
+    /* height: 60vh; */
     /* flex: 0 1 50%; */
     /* z-index: 8; */
     padding: 200px 50px 50px 50px;
     background-color: white;
+}
+
+.portfolio {
+    min-height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio h1 {
+    font-size: 35px;
+}
+
+.jumbo-custom {
+    background-color: white;
+    min-height: 70vh;
+    width: 80vw;
+    transform: translateY(-50px);
+}
+
+.portfolio img {
+    padding: 20px;
 }
 
 @media screen and (min-width: 720px) {
@@ -228,19 +251,6 @@ p {
     opacity: 50%;
     
 } */
-
-.portfolio {
-    min-height: 100vh;
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.jumbo-custom {
-    background-color: white;
-    min-height: 70vh;
-}
 .placeholders {
     display: flex;
     position: relative;
