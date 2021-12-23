@@ -6,7 +6,7 @@
 
 :root {
     --text: #412d20;
-    --white: #ede0d4;
+    --white: #ebe6e1;
     --lighter: #ede0d4;
     --light: #ddb892;
     --medium: #ddb892;
@@ -46,7 +46,7 @@ h1 {
     font-size: 3rem;
     font-family: "spartan", sans-serif;
     line-height: 1.8;
-    color: white;
+    color: black;
    
 }
 
