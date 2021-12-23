@@ -102,7 +102,7 @@ p {
     /* height: 80vh; */
     width: 80vw;
     /* padding-left: 80px; */
-    margin: 150px 0px -20px;
+    margin: 0px 0px -20px;
     z-index: 1;
     transform: translateY(150px);
 }
@@ -170,6 +170,10 @@ p {
         /* z-index: 1; */
     }
 
+    .portfolio {
+        margin-top: 30px;
+    }
+
     .jumbo-custom {
         margin: 100px 0px 0px 0px; 
         padding: 50px 50px 150px 50px;
@@ -178,7 +182,7 @@ p {
         flex-direction: column-reverse;
     }
     .portfolio img {
-        width: 600px;
+        width: 800px;
         transform: translateY(-200px) translateX(160px);
         z-index: 2;
     }
