@@ -88,27 +88,47 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 100px 0px;
+    padding: 20px;
     background-color: var(--white);
     min-height: 150vh;
+    flex-direction: column;
 }
 
 .about h2 {
-    padding: 30px 0px;
+    padding-bottom: 10px;
 }
 
-.about-picture img {
-    width: 700px;
-    padding-left: 80px;
+.about img {
+    /* height: 80vh; */
+    width: 80vw;
+    /* padding-left: 80px; */
+    margin: 150px 0px -20px;
+    z-index: 1;
+    transform: translateY(150px);
 }
 
 .about-text {
-    height: 500px;
-    width: 620px;
-    z-index: 8;
-    padding: 0px 80px 0px 20px;
+    height: 60vh;
+    flex: 0 1 50%;
+    /* z-index: 8; */
+    padding: 200px 50px 50px 50px;
+    background-color: white;
 }
 
+@media screen and (min-width: 992px) {
+    .about {
+        padding: 100px 0px;
+        flex-direction: row;
+    }
+    
+    .about-text {
+        transform: translateX(-25px);
+    }
+
+    .about-picture img {
+        transform: translateX(25px);
+    }
+}
 
 
 /* Portfolio section */
@@ -327,22 +347,6 @@ form {
      text-align: center;
  }
 
- /* When screen width is less than or equal to 1300px */
-@media screen and (max-width: 1300px) {
-    .about {
-        flex-direction: column;
-    }
-
-    .about-picture img {
-        padding: 0px 20px;
-    }
-    .about-text {
-        margin: 0px 200px;
-        padding: 20px;
-        /* width: 500px; */
-    }
-}
-
 /* When screen width is less than or equal to 880px */
 @media screen and (max-width: 880px) {
     .text-box {
@@ -363,19 +367,9 @@ form {
         font-size: 5rem;
     }
 
-    .about {
-        padding: 0px;
-    }
-    
-    .about img{
-        width: 100%;
-        padding: 0px;
-        margin: 150px 0px 80px;
-    }
-
     .about-text {
-        width: 100%;
-        box-shadow: none;
+        /* width: 100%; */
+        /* box-shadow: none; */
     }
 
     .portfolio h2{
@@ -435,27 +429,6 @@ form {
         padding: 10px;
         text-align: center;
     } */
-
-    .about {
-        padding: 0px;
-        height: 570px;
-    }
-
-    .about-text {
-        height: 350px;
-        box-shadow: none;
-        background-color: var(--white);
-    }
-
-    .about-text h2 {
-        text-align: left;
-    }
-
-    .about img {
-        padding: 50px 20px;
-        margin: 50px 0px 100px;
-
-    }
 
     .placeholder-large h3 {
         font-size: 3.5vw;
