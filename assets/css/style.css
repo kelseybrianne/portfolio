@@ -168,10 +168,14 @@ p {
     .project {
         flex-direction: column-reverse;
     }
+    
     .portfolio img {
         max-width: 400px;
-        transform: translateY(-200px) translateX(160px);
+        /* transform: translateY(-200px) translateX(160px); */
+        transform: translateY(-200px);
+        align-self: flex-end;
         z-index: 2;
+
     }
 }
 
@@ -196,8 +200,12 @@ p {
         z-index: 2;
     }
 
+    .jumbo-custom {
+        align-self: flex-start;
+    }
+
     .portfolio img {
-        max-width: 600px;
+        max-width: 700px;
     }
 }
 
