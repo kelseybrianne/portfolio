@@ -136,7 +136,7 @@ p {
 
 .jumbo-custom {
     background-color: white;
-    min-height: 70vh;
+    /* min-height: 70vh; */
     width: 80vw;
     transform: translateY(-50px);
     padding: 20px;
@@ -182,7 +182,7 @@ p {
         flex-direction: column-reverse;
     }
     .portfolio img {
-        width: 800px;
+        max-width: 400px;
         transform: translateY(-200px) translateX(160px);
         z-index: 2;
     }
@@ -201,6 +201,10 @@ p {
 
     .about-picture img {
         /* transform: translateX(25px); */
+    }
+
+    .portfolio img {
+        max-width: 600px;
     }
 }
 
