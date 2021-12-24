@@ -44,6 +44,10 @@ a {
     color: inherit;
 }
 
+.hover-light:hover {
+    color: var(--white)
+}
+
 h1 {
     font-size: 3rem;
     font-family: "spartan", sans-serif;
@@ -149,6 +153,10 @@ a:hover {
     /* padding: 20px; */
 }
 
+.padding {
+    padding: 0px 20px 0px 20px;
+}
+
 .small-text {
     font-size: 11px; 
 }
@@ -199,6 +207,19 @@ footer {
 }
 
 @media screen and (min-width: 720px) {
+    nav {
+        height: 150px;
+    }
+
+    .custom-button {
+        border: 1px solid white;
+        border-radius: 4px;
+    }
+    
+    .custom-button:hover {
+        background-color: rgb(244, 241, 237);
+    }
+
    .about img {
         width: 100%;
         max-width: 450px;
@@ -250,10 +271,6 @@ footer {
 
 
 @media screen and (min-width: 992px) {
-    li {
-        padding: 65px 50px 50px 0px;
-    }
-
     .about {
         flex-direction: row;
         justify-content: end;
