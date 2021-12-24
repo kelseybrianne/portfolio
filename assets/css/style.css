@@ -268,6 +268,12 @@ footer {
         max-width: max-content;
         transform: translateX(-150px);
     }
+
+    .icon {
+        /* color: rgb(92, 92, 92); */
+        color: var(--light);
+        padding-right: 10px;
+    }
 }
 
 
