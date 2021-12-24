@@ -15,10 +15,6 @@
     --darkest: #7f5539;
 }
 
-/* html {
-    font-size: 16px;
-} */
-
 body {
     padding: 0px 20px;
     color: var(--darkgray);
@@ -27,11 +23,12 @@ body {
 
 header {
     background-color: var(--lightest);
-    height: 10vh;
+    height: 5vh;
 }
 
 .navbar {
-    background-color: var(--lightest)
+    background-color: var(--lightest);
+    padding-left: 0px;
 }
 
 li {
@@ -84,10 +81,10 @@ a:hover {
 
 /* Introductory statement at the top of the page */
 .intro {
-    min-height: 90vh;
+    min-height: 95vh;
     width: 100%;
     background-color: var(--lightest);
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -209,6 +206,14 @@ footer {
 @media screen and (min-width: 720px) {
     nav {
         height: 150px;
+    }
+
+    .navbar {
+        padding-left: 35px;
+    }
+
+    .intro {
+        padding: 50px;
     }
 
     .custom-button {
