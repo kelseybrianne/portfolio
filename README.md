@@ -12,3 +12,11 @@ At the link below, you'll find my deployed portfolio and have access to my most 
 ## Link
 
 https://kelseybrianne.github.io/portfolio/
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- Bootstrap
