@@ -6,7 +6,7 @@ At the link below, you'll find my deployed portfolio and have access to my most 
 
 ## Screenshot
 
-![Kelsey Mailau's deployed portfolio.](./assets/images/deployed-portfolio.png)
+![Kelsey Mailau's deployed portfolio.](./assets/images/portfolio-screenshot.png)
 
 
 ## Link
