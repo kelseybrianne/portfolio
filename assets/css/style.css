@@ -188,7 +188,7 @@ a:hover {
 
 .contact-info {
     background-color: white;
-    padding: 60px;
+    padding: 30px;
     transform: translateY(80px);
     width: 80vw;
     max-width: max-content;
@@ -201,6 +201,11 @@ a:hover {
 footer {
     padding: 50px;
     text-align: center;
+}
+
+.icon {
+    color: var(--light);
+    padding-right: 10px;
 }
 
 @media screen and (min-width: 720px) {
@@ -272,12 +277,6 @@ footer {
         padding: 100px;
         max-width: max-content;
         transform: translateX(-150px);
-    }
-
-    .icon {
-        /* color: rgb(92, 92, 92); */
-        color: var(--light);
-        padding-right: 10px;
     }
 }
 
