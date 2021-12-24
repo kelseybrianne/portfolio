@@ -247,6 +247,7 @@ footer {
         transform: translateY(-190px);
         align-self: flex-end;
         z-index: 2;
+        padding-right: 50px;
     }
 
     .contact-me {
