@@ -115,6 +115,11 @@ a:hover {
     background-color: white;
 }
 
+.link {
+    text-decoration: underline;
+    text-decoration-color: var(--medium);
+}
+
 .portfolio {
     min-height: 100vh;
     padding-top: 100px;
@@ -198,6 +203,10 @@ footer {
         width: 100%;
         max-width: 450px;
         height: auto;
+    }
+
+    .about-text p {
+        font-size: 1.2rem;
     }
 
     .portfolio {
