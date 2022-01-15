@@ -87,7 +87,7 @@ a:hover {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 /* About me page */
