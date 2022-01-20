@@ -238,8 +238,15 @@ footer {
 
 #scrollBtn {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    text-transform: uppercase;
+    right: 0px;
+    bottom: 120px;
+    z-index: 100;
+    transform: rotate(.25turn);
+}
+
+.hide {
+    display: none;
 }
 
 @media screen and (min-width: 720px) {

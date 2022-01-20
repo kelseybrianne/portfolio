@@ -28,7 +28,26 @@ const scrollToTop = () => {
         left: 0,
         behavior: 'smooth'
       });
+    scrollBtn.addClass("hide");
 }
 
 scrollBtn.click(scrollToTop);
 
+// Show scroll to top button when you get to the bottom of the page
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // you're at the bottom of the page
+        console.log('bottom');
+        scrollBtn.removeClass("hide");
+    }
+};
+
+// Hide button when you get to the top of the page
+window.addEventListener('scroll', function(e) {
+    if (
+      window.innerHeight + document.documentElement.scrollTop ===
+      document.documentElement.offsetHeight
+    ) {
+        scrollBtn.addClass("hide");
+    }
+  })
