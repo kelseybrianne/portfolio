@@ -1,3 +1,5 @@
+let footerEl = document.getElementById("currentYear");
+
 // Mobile menu
 $(document).ready(function() {
 
@@ -11,4 +13,8 @@ $(document).ready(function() {
     });
   });
 
-  console.log("HI");
+// Use moment.js to get current year for copyright
+var currentYear = moment().format("YYYY");
+let copyrightEl = document.createElement("p");
+copyrightEl.innerHTML = `&copy; Kelsey Mailau ${currentYear}`;
+footerEl.appendChild(copyrightEl);
