@@ -20,6 +20,7 @@ https://kelseybrianne.github.io/portfolio/
 - JavaScript
 - jQuery
 - Bootstrap
+- Moment.js
 
 ## License
 
