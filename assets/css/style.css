@@ -236,6 +236,12 @@ footer {
     padding-right: 10px;
 }
 
+#scrollBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
 @media screen and (min-width: 720px) {
     h1 {
         font-size: 3rem;
