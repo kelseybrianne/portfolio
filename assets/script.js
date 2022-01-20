@@ -33,21 +33,13 @@ const scrollToTop = () => {
 
 scrollBtn.click(scrollToTop);
 
-// Show scroll to top button when you get to the bottom of the page
+// Show scroll to top button when you scroll below 3500px and hide it again when you're above 3500px
 window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    if ((window.innerHeight + window.scrollY) >= 3500) {
         // you're at the bottom of the page
-        console.log('bottom');
+        console.log(document.body.offsetHeight);
         scrollBtn.removeClass("hide");
-    }
-};
-
-// Hide button when you get to the top of the page
-window.addEventListener('scroll', function(e) {
-    if (
-      window.innerHeight + document.documentElement.scrollTop ===
-      document.documentElement.offsetHeight
-    ) {
+    } else {
         scrollBtn.addClass("hide");
     }
-  })
+};
