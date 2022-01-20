@@ -46,7 +46,7 @@ a {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "spartan", sans-serif;
     line-height: 1.8;
     color: black;
@@ -84,10 +84,38 @@ a:hover {
     min-height: 95vh;
     width: 100%;
     background-color: var(--lightest);
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+}
+
+.arrow {
+    writing-mode: vertical-rl;
+    transform: rotate(.25turn);
+    color: var(--dark);
+    height: 200px;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* About me page */
@@ -209,6 +237,10 @@ footer {
 }
 
 @media screen and (min-width: 720px) {
+    h1 {
+        font-size: 3rem;
+    }
+
     nav {
         height: 150px;
     }
@@ -218,7 +250,12 @@ footer {
     }
 
     .intro {
-        padding: 50px;
+        padding: 50px 40px;
+    }
+
+    .arrow {
+        bottom: 40px;
+        right: 40px;
     }
 
     .custom-button {
