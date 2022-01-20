@@ -197,7 +197,7 @@ a:hover {
 }
 
 .hover-border:hover {
-    border: 1px solid var(--darkgray);
+    border: 1px solid var(--white);
 }
 
 .img-custom {
