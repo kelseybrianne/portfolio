@@ -100,7 +100,7 @@ a:hover {
     right: 15px;
     bottom: 30px;
     animation-name: bounce;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -110,9 +110,19 @@ a:hover {
     0% {
         transform: translateY(0px);
     }
+
+    15% {
+        transform: translateY(0px);
+    }
+
     50% {
         transform: translateY(-50px);
+    } 
+
+    85% {
+        transform: translateY(0px);
     }
+
     100% {
         transform: translateY(0px);
     }
