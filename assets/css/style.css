@@ -246,6 +246,15 @@ footer {
     padding-right: 10px;
 }
 
+.large {
+    font-size: 35px;
+    margin: 15px 30px 15px 0px;
+}
+
+.large:hover{
+    color: var(--lightest);
+}
+
 #scrollBtn {
     position: fixed;
     text-transform: uppercase;
