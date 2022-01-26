@@ -104,8 +104,8 @@ a:active {
     right: 15px;
     bottom: 30px;
     animation-name: bounce;
-    animation-duration: 2.5s;
-    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
@@ -115,17 +115,9 @@ a:active {
         transform: translateY(0px);
     }
 
-    15% {
-        transform: translateY(0px);
-    }
-
     50% {
         transform: translateY(-50px);
     } 
-
-    85% {
-        transform: translateY(0px);
-    }
 
     100% {
         transform: translateY(0px);
