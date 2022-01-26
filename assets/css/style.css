@@ -61,6 +61,11 @@ h2, h3 {
     color: var(--darkgray);
 }
 
+.spartan {
+    font-family: "spartan", sans-serif;
+    text-transform: none;
+}
+
 h2 {
     font-size: 2rem;
 }
