@@ -42,7 +42,7 @@ a {
 }
 
 .hover-light:hover {
-    color: var(--white)
+    color: var(--white);
 }
 
 h1 {
@@ -77,6 +77,10 @@ p {
 a:hover {
     text-decoration: none;
     color: inherit;
+}
+
+a:active {
+    
 }
 
 /* Introductory statement at the top of the page */
@@ -262,6 +266,10 @@ footer {
     bottom: 120px;
     z-index: 100;
     transform: rotate(.25turn);
+}
+
+#scrollBtn:hover {
+    color: var(--dark);
 }
 
 .hide {
