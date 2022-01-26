@@ -79,10 +79,6 @@ a:hover {
     color: inherit;
 }
 
-a:active {
-    
-}
-
 /* Introductory statement at the top of the page */
 .intro {
     min-height: 95vh;
@@ -104,7 +100,7 @@ a:active {
     right: 15px;
     bottom: 30px;
     animation-name: bounce;
-    animation-duration: 2s;
+    animation-duration: 2.2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -118,6 +114,10 @@ a:active {
     50% {
         transform: translateY(-50px);
     } 
+
+    90% {
+        transform: translateY(0px);
+    }
 
     100% {
         transform: translateY(0px);
