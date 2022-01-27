@@ -89,7 +89,7 @@ a:hover {
     min-height: 95vh;
     width: 100%;
     background-color: var(--lightest);
-    padding: 40px 20px;
+    padding: 40px 50px 40px 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -100,10 +100,11 @@ a:hover {
     writing-mode: vertical-rl;
     transform: rotate(.25turn);
     color: var(--dark);
-    height: 200px;
+    height: 130px;
+    font-size: 13px;
     position: absolute;
-    right: 15px;
-    bottom: 30px;
+    right: 5px;
+    bottom: 45px;
     animation-name: bounce;
     animation-duration: 2.2s;
     animation-timing-function: ease-in-out;
@@ -259,10 +260,11 @@ footer {
 #scrollBtn {
     position: fixed;
     text-transform: uppercase;
-    right: 0px;
+    right: -20px;
     bottom: 120px;
     z-index: 100;
     transform: rotate(.25turn);
+    font-size: 12px;
 }
 
 #scrollBtn:hover {
@@ -351,6 +353,10 @@ footer {
         padding: 100px;
         max-width: max-content;
         transform: translateX(-150px);
+    }
+
+    #scrollBtn {
+        font-size: inherit;
     }
 }
 
