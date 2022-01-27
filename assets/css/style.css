@@ -258,17 +258,22 @@ footer {
 }
 
 #scrollBtn {
+    background-color: rgb(244, 241, 237);
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 15px;
     position: fixed;
     text-transform: uppercase;
-    right: -20px;
-    bottom: 120px;
+    right: 30px;
+    bottom: 30px;
     z-index: 100;
     transform: rotate(.25turn);
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #scrollBtn:hover {
-    color: var(--dark);
+    color: var(--darkgray);
+    background-color: var(--lightest);
 }
 
 .hide {
@@ -295,6 +300,8 @@ footer {
     .arrow {
         bottom: 40px;
         right: 40px;
+        font-size: 20px;
+        height: 200px;
     }
 
     .custom-button {
@@ -356,7 +363,10 @@ footer {
     }
 
     #scrollBtn {
-        font-size: inherit;
+        padding: 20px;
+        font-size: 25px;
+        right: 50px;
+        bottom: 50px;
     }
 }
 
