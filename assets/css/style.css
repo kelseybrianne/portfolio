@@ -16,14 +16,17 @@
 }
 
 body {
-    padding: 0px 20px;
     color: var(--darkgray);
     background-color: var(--lightest);
 }
 
 header {
-    background-color: var(--lightest);
     height: 5vh;
+    /* position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000; */
+    /* width: 100%; */
 }
 
 .navbar {
@@ -88,8 +91,8 @@ a:hover {
 .intro {
     min-height: 95vh;
     width: 100%;
-    background-color: var(--lightest);
-    padding: 40px 50px 40px 15px;
+    background-color: white;
+    padding: 40px 70px 40px 35px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -100,11 +103,12 @@ a:hover {
     writing-mode: vertical-rl;
     transform: rotate(.25turn);
     color: var(--dark);
-    height: 130px;
+    padding: 20px;
+    height: 150px;
     font-size: 13px;
     position: absolute;
     right: 5px;
-    bottom: 45px;
+    bottom: -20px;
     animation-name: bounce;
     animation-duration: 2.2s;
     animation-timing-function: ease-in-out;
@@ -301,7 +305,7 @@ footer {
         bottom: 40px;
         right: 40px;
         font-size: 20px;
-        height: 200px;
+        height: 140px;
     }
 
     .custom-button {
