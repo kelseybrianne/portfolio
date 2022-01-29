@@ -255,6 +255,7 @@ footer {
     margin: 15px 30px 15px 0px;
 }
 
+/* large icon */
 .large:hover{
     color: var(--lightest);
 }
