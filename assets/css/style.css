@@ -44,8 +44,8 @@ a {
     color: inherit;
 }
 
-.hover-light:hover {
-    color: var(--white);
+.hover-light:active {
+    color: var(--lighter);
 }
 
 h1 {
@@ -284,6 +284,13 @@ footer {
     display: none;
 }
 
+.burger-custom {
+    display: inline;
+    position: absolute;
+    right: 20px;
+    top: 55px;
+}
+
 @media screen and (min-width: 720px) {
     h1 {
         font-size: 3rem;
@@ -402,5 +409,15 @@ footer {
     #featured-img {
         max-width: 700px;
         transform: translateY(-230px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .burger-custom {
+        display: none;
+    }
+
+    .hover-light:hover {
+        color: white;
     }
 }
