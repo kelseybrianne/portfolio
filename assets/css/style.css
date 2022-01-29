@@ -257,7 +257,7 @@ footer {
 
 /* large icon */
 .large:hover{
-    color: var(--lightest);
+    color: var(--light);
 }
 
 #scrollBtn {
