@@ -6,37 +6,35 @@
 
 :root {
     --darkgray: rgba(51,51,51,1);
-    --lightest: #ebe6e1;
-    --lighter: #ede0d4;
-    --light: #ddb892;
-    --medium: #ddb892;
+    --lightest: #F7F5F3;
+    --lighter: #EFEBE6;
+    --light: #D6CCC2;
+    --medium: #C6B7A9;
     --dark: #b08968;
+    --dark: #9E866B;
     --darker: #9c6644;
+    --darker: #7B6751;
     --darkest: #7f5539;
+    --darkest: #4B3F30;
+    --blue: #a4a9ad;
 }
 
 body {
     color: var(--darkgray);
-    background-color: var(--lightest);
+    background-color: var(--lighter);
 }
 
 .announcement {
     height: 15vh;
-    background-color: var(--dark);
-    background-color: #a4a9ad;
+    background-color: var(--blue);
 }
 
 header {
     height: 5vh;
-    /* position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 1000; */
-    /* width: 100%; */
 }
 
 .navbar {
-    background-color: var(--lightest);
+    background-color: var(--lighter);
     padding-left: 0px;
 }
 
@@ -97,7 +95,6 @@ a:hover {
 .intro {
     min-height: 80vh;
     width: 100%;
-    background-color: var(--lightest);
     padding: 40px 70px 40px 35px;
     display: flex;
     flex-direction: column;
@@ -108,7 +105,8 @@ a:hover {
 .arrow {
     writing-mode: vertical-rl;
     transform: rotate(.25turn);
-    color: var(--dark);
+    color: var(--medium);
+    color: #9E866B;
     padding: 20px;
     height: 150px;
     font-size: 13px;
@@ -145,7 +143,6 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--lightest);
     min-height: 150vh;
     flex-direction: column;
 }
@@ -230,7 +227,7 @@ a:hover {
 }
 
 .contact-me {
-    padding: 50px 0px;
+    padding: 50px 20px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -249,12 +246,13 @@ a:hover {
 }
 
 footer {
-    padding: 50px;
+    padding: 40px 0px 30px 0px;
     text-align: center;
+    background-color: var(--blue);
 }
 
 .icon {
-    color: var(--light);
+    color: var(--medium);
     padding-right: 10px;
 }
 
@@ -327,7 +325,7 @@ footer {
     }
     
     .custom-button:hover {
-        background-color: rgb(244, 241, 237);
+        background-color: #F7F5F3;
     }
 
    .about img {
@@ -362,7 +360,7 @@ footer {
 
     .contact-me {
         flex-direction: row;
-        padding-top: 150px;
+        padding: 150px 0px;
     }
 
     .contact-me img {
