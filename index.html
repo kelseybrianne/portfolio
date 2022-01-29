@@ -17,9 +17,8 @@
 <!-- Javascript functionality pending <script src="https://kit.fontawesome.com/7dc239c399.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    <div class="announcement"></div>
     <header>
-
+        <div class="announcement"></div>
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <a class="navbar-item"></a>
@@ -35,9 +34,9 @@
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start"></div>
                 <div class="navbar-end">
-                    <li><a href="#about" class="hover-light">About</a></li>
-                    <li><a href="#portfolio" class="hover-light">Portfolio</a></li>
-                    <li><a href="#contact-me" class="hover-light">Contact Me</a></li>
+                    <li><a href="#about" class="light-on-hover">About</a></li>
+                    <li><a href="#portfolio" class="light-on-hover">Portfolio</a></li>
+                    <li><a href="#contact-me" class="light-on-hover">Contact Me</a></li>
                     <li class="custom-button">
                         <a href="./assets/kelsey-mailau-resume.pdf" target="_blank">Resume</a>
                     </li>
@@ -77,7 +76,7 @@
         <h3 class="spartan">HELLO,</h3>
         <h1>i'm kelsey</h1>
         <h3>full-stack engineer and web developer</h3>
-        <h3 class="arrow rotate">scroll <i class="fas fa-chevron-down"></i></h3>
+        <h3 class="scroll-animation rotate">scroll <i class="fas fa-chevron-down"></i></h3>
     </section>
     <main>
         <section class="about" id="container">
@@ -88,16 +87,16 @@
                 <h2 id="about">About</h2>
                 <p>I'm a full-stack web developer with a passionate work-ethic who enjoys building beautiful web interfaces with an intuitive user experience. Currently attending the University of Washington to receive a certificate in full-stack web development, with newly developed experience in HTML, JavaScript, CSS, object-oriented programming, and responsive web design. Through improved SEO, web page accessibility, responsive web design, and friendly modern user-interfaces, I look forward to helping companies increase their profits and popularity by increasing traffic to their online platforms and being seen by an audience they deserve.
                 </p>
-                <p>Want to connect? <a class="link" href="#contact-me">Let's chat!</a></p>
-                <a class="link" href="https://github.com/kelseybrianne" target="_blank"><i class="icon large fab fa-github"></i></a>
-                <a class="link" href="https://www.linkedin.com/in/kelseybrianne/" target="_blank"><i class="icon large fab fa-linkedin"></i></a>
+                <p>Want to connect? <a class="underline-link" href="#contact-me">Let's chat!</a></p>
+                <a class="underline-link" href="https://github.com/kelseybrianne" target="_blank"><i class="icon large fab fa-github"></i></a>
+                <a class="underline-link" href="https://www.linkedin.com/in/kelseybrianne/" target="_blank"><i class="icon large fab fa-linkedin"></i></a>
                 <a class="link" href="https://www.instagram.com/kelseybriaanne/" target="_blank"><i class="icon large fab fa-instagram"></i></a>
             </div>
         </section>
         <section class="background-video"></section>
         <section class="portfolio" id="portfolio">
             <h2>Portfolio</h2>
-            <div class="project">
+            <div class="projects-container">
                 <img id="featured-img" src="assets/images/self-reflection.jpg">
                 <div class="jumbotron jumbotron-fluid jumbo-custom">
                     <div class="container">
@@ -112,11 +111,11 @@
                   </div>
 
             </div>
-            <div class="container portfolio-apps">
-                <div class="row justify-content-around">
+            <div class="container">
+                <div class="row justify-content-center justify-content-md-around">
                     <a href="https://kelseybrianne.github.io/weather-widget/" target="_blank">
-                        <div class="hover-border py-5 padding" style="width: 20rem;">
-                            <img src="assets/images/eric-muhr-Fs-bcmsV-hA-unsplash.jpg" class="card-img-top img-custom" alt="...">
+                        <div class="project py-5 padding" style="width: 20rem;">
+                            <img src="assets/images/eric-muhr-Fs-bcmsV-hA-unsplash.jpg" class="card-img-top project-img" alt="...">
                             <div class="card-body portfolio-card">
                               <h5 class="card-title">Featured Project</h5>
                               <h3>Weather Widget</h3>
@@ -128,8 +127,8 @@
                         </div>
                     </a>
                     <a href="https://kelseybrianne.github.io/day-planner/" target="_blank">
-                        <div class="hover-border py-5 padding" style="width: 20rem;">
-                            <img src="assets/images/stil-flRm0z3MEoA-unsplash.jpg" class="card-img-top img-custom" alt="...">
+                        <div class="project py-5 padding" style="width: 20rem;">
+                            <img src="assets/images/stil-flRm0z3MEoA-unsplash.jpg" class="card-img-top project-img" alt="...">
                             <div class="card-body portfolio-card">
                               <h5 class="card-title">Featured Project</h5>
                               <h3>Take Note</h3>
@@ -141,8 +140,8 @@
                         </div>
                     </a>
                     <a href="https://kelseybrianne.github.io/code-quiz/" target="_blank">
-                        <div class="hover-border py-5 padding" style="width: 20rem;">
-                            <img src="assets/images/kelly-sikkema-YK0HPwWDJ1I-unsplash.jpg" class="card-img-top img-custom" alt="...">
+                        <div class="project py-5 padding" style="width: 20rem;">
+                            <img src="assets/images/kelly-sikkema-YK0HPwWDJ1I-unsplash.jpg" class="card-img-top project-img" alt="...">
                             <div class="card-body portfolio-card">
                               <h5 class="card-title">Featured Project</h5>
                               <h3>Code Quiz</h3>

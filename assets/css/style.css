@@ -29,11 +29,8 @@ body {
     background-color: var(--blue);
 }
 
-header {
-    height: 5vh;
-}
-
 .navbar {
+    height: 5vh;
     background-color: var(--lighter);
     padding-left: 0px;
 }
@@ -48,7 +45,7 @@ a {
     color: inherit;
 }
 
-.hover-light:active {
+.light-on-hover:active {
     color: var(--lighter);
 }
 
@@ -57,7 +54,6 @@ h1 {
     font-family: "spartan", sans-serif;
     line-height: 1.8;
     color: black;
-   
 }
 
 h2, h3 {
@@ -91,7 +87,7 @@ a:hover {
     color: inherit;
 }
 
-/* Introductory statement at the top of the page */
+/* Intro page */
 .intro {
     min-height: 80vh;
     width: 100%;
@@ -102,11 +98,10 @@ a:hover {
     position: relative;
 }
 
-.arrow {
+.scroll-animation {
     writing-mode: vertical-rl;
     transform: rotate(.25turn);
-    color: var(--medium);
-    color: #9E866B;
+    color: var(--dark);
     padding: 20px;
     height: 150px;
     font-size: 13px;
@@ -141,10 +136,10 @@ a:hover {
 /* About me page */
 .about {
     display: flex;
-    justify-content: center;
     align-items: center;
     min-height: 150vh;
     flex-direction: column;
+    padding: 0px 20px;
 }
 
 .about h2 {
@@ -163,7 +158,7 @@ a:hover {
     background-color: white;
 }
 
-.link {
+.underline-link {
     text-decoration: underline;
     text-decoration-color: var(--medium);
 }
@@ -171,13 +166,14 @@ a:hover {
 .portfolio {
     min-height: 100vh;
     padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.project {
+.projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 20px; */
 }
 
 .portfolio h1 {
@@ -191,14 +187,16 @@ a:hover {
 
 .jumbo-custom {
     background-color: white;
-    /* min-height: 70vh; */
     width: 80vw;
     transform: translateY(-50px);
-    /* padding: 20px; */
 }
 
-.padding {
+.project {
     padding: 0px 20px 0px 20px;
+}
+
+.project:hover {
+    border: 1px solid var(--white);
 }
 
 .small-text {
@@ -210,16 +208,12 @@ a:hover {
 }
 
 .portfolio-card {
-    background-color: var(--lightest);
+    background-color: var(--lighter);
     box-shadow: none;
     text-align: center;
 }
 
-.hover-border:hover {
-    border: 1px solid var(--white);
-}
-
-.img-custom {
+.project-img {
     height: 200px;
     object-fit: cover;
     object-position: 0 70%;
@@ -312,7 +306,7 @@ footer {
         padding: 50px 40px;
     }
 
-    .arrow {
+    .scroll-animation {
         bottom: 40px;
         right: 40px;
         font-size: 20px;
@@ -346,7 +340,7 @@ footer {
         margin: 100px 0px 0px 0px; 
         padding: 50px 50px 150px 50px;
     }
-    .project {
+    .projects-container {
         flex-direction: column-reverse;
     }
     
@@ -421,7 +415,7 @@ footer {
         display: none;
     }
 
-    .hover-light:hover {
+    .light-on-hover:hover {
         color: gray;
     }
 }
