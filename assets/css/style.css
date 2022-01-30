@@ -191,6 +191,11 @@ a:hover {
     transform: translateY(-50px);
 }
 
+#featured-img {
+    transform: translateY(60px);
+    z-index: 3;
+}
+
 .project {
     padding: 0px 20px 0px 20px;
 }
