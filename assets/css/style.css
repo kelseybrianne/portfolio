@@ -188,7 +188,7 @@ a:hover {
 }
 
 .jumbo-custom {
-    background-color: var(--blue);
+    background-color: var(--medium);
     width: 90vw;
     transform: translateY(-50px);
     padding: 30px;
