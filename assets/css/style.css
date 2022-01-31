@@ -166,8 +166,8 @@ a:hover {
 .portfolio {
     min-height: 100vh;
     padding-top: 100px;
-    /* padding-left: 20px;
-    padding-right: 20px; */
+    padding: 40px;
+    /* padding-right: 20px; */
 }
 
 .projects-container {
@@ -189,8 +189,8 @@ a:hover {
 
 .jumbo-custom {
     background-color: var(--medium);
-    width: 90vw;
-    transform: translateY(-50px);
+    width: 75vw;
+    /* transform: translateY(-50px); */
     padding: 30px;
     padding-top: 350px;
 }
