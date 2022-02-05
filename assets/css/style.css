@@ -312,6 +312,7 @@ footer {
         transform: translate(-50%, -50%);
         z-index: 200;
         pointer-events: none;
+        display: none;
     }
 
     h1 {
