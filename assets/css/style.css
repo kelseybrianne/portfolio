@@ -307,8 +307,8 @@ footer {
         border: 2px solid white;
         border-radius: 50%;
         position: absolute;
-        background-color: white;
-        opacity: .5;
+        /* background-color: white; */
+        /* opacity: .5; */
         transform: translate(-50%, -50%);
         z-index: 200;
         pointer-events: none;
