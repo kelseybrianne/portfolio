@@ -1,9 +1,10 @@
 let footerEl = document.getElementById("currentYear");
+let mouseCursor = document.querySelector('.cursor');
 const scrollBtn = $('#scrollBtn')
 
 // Mobile menu
 $(document).ready(function() {
-
+ 
     // Check for click events on the navbar burger icon
     $(".navbar-burger").click(function() {
   
@@ -12,7 +13,20 @@ $(document).ready(function() {
         $(".navbar-menu").toggleClass("is-active");
   
     });
-  });
+});
+
+window.addEventListener('mousemove', cursor);
+
+function cursor(e) {
+
+    if ((window.innerHeight + window.scrollY) <= 1000) {
+        mouseCursor.style.top = e.pageY + 'px';
+        mouseCursor.style.left = e.pageX + 'px';
+        mouseCursor.style.display = 'block'; 
+    } else {
+        mouseCursor.style.display = 'none';
+    }
+}
 
 // Use moment.js to get current year for copyright
 var currentYear = moment().format("YYYY");

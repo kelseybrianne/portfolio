@@ -174,7 +174,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: -320px 0px;
+    margin-top: -320px;
 }
 
 .portfolio h1 {
@@ -301,8 +301,21 @@ footer {
 }
 
 @media screen and (min-width: 720px) {
+    .cursor {
+        width: 3rem;
+        height: 3rem;
+        border: 2px solid white;
+        border-radius: 50%;
+        position: absolute;
+        background-color: white;
+        opacity: .5;
+        transform: translate(-50%, -50%);
+        z-index: 200;
+        pointer-events: none;
+    }
+
     h1 {
-        font-size: 3rem;
+        font-size: 3rem; 
     }
 
     nav {
@@ -311,6 +324,18 @@ footer {
 
     .navbar {
         padding-left: 35px;
+    }
+
+    .navbar-links {
+        max-width: 45vw;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+
+    .navbar-links,
+    .logo {
+        flex: 1;
     }
 
     .intro {
@@ -348,12 +373,13 @@ footer {
     }
 
     .jumbo-custom {
-        margin: 100px 0px 0px 0px; 
+        margin: 50px 0px 0px 0px; 
         padding: 50px 50px 150px 50px;
     }
     .projects-container {
         flex-direction: column-reverse;
-        margin-top: 50px;
+        margin-top: 0px;
+        margin-bottom: -320px;
     }
     
     #featured-img {
