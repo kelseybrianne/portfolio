@@ -165,8 +165,9 @@ a:hover {
 
 .portfolio {
     min-height: 100vh;
+    margin-top: 200px;
     padding-top: 100px;
-    padding: 40px;
+    /* padding: 40px; */
     /* padding-right: 20px; */
 }
 
@@ -189,16 +190,16 @@ a:hover {
 
 .jumbo-custom {
     background-color: var(--medium);
-    width: 75vw;
+    width: 90vw;
     /* transform: translateY(-50px); */
     padding: 30px;
-    padding-top: 350px;
+    /* z-index: 3; */
+    padding-top: 120px;
 }
 
 #featured-img {
-    transform: translateY(420px);
-    z-index: 3;
-    width: 500px;
+    transform: translateY(80px);
+    width: 75vw;
 }
 
 .project {
@@ -374,22 +375,18 @@ footer {
     }
 
     .jumbo-custom {
-        margin: 50px 0px 0px 0px; 
-        padding: 50px 50px 150px 50px;
+        /* margin: 50px 0px 0px 0px;  */
+        padding: 150px 50px 150px 50px;
     }
     .projects-container {
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
         margin-top: 0px;
-        margin-bottom: -320px;
+        /* margin-bottom: -320px; */
     }
     
     #featured-img {
-        max-width: 600px;
-        width: 600px;
-        transform: translateY(-250px);
-        align-self: flex-end;
         z-index: 2;
-        padding-right: 50px;
+        /* padding-right: 50px; */
     }
 
     .contact-me {
@@ -440,14 +437,21 @@ footer {
         z-index: 2;
     }
 
+    .projects-container {
+        flex-direction: column-reverse;
+        padding-top: 20px;
+    }
+
     .jumbo-custom {
         align-self: flex-start;
+        padding-top: 50px;
     }
 
     #featured-img {
         max-width: 700px;
         width: 700px;
-        transform: translateY(-280px)
+        transform: translateY(-150px);
+        align-self: flex-end;
     }
 }
 
