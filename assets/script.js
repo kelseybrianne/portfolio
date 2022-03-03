@@ -28,11 +28,11 @@ function cursor(e) {
     }
 }
 
-// Use moment.js to get current year for copyright
-var currentYear = moment().format("YYYY");
-let copyrightEl = document.createElement("p");
-copyrightEl.innerHTML = `&copy; Kelsey Mailau ${currentYear}`;
-footerEl.appendChild(copyrightEl);
+// // Use moment.js to get current year for copyright
+// var currentYear = moment().format("YYYY");
+// let copyrightEl = document.createElement("p");
+// copyrightEl.innerHTML = `&copy; Kelsey Betteridge ${currentYear}`;
+// footerEl.appendChild(copyrightEl);
 
 // Create scroll to top function when button is clicked
 const scrollToTop = () => {
