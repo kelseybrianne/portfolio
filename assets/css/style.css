@@ -240,10 +240,14 @@ a:hover {
 
 .contact-info {
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     transform: translateY(80px);
     width: 80vw;
     max-width: max-content;
+}
+
+.contact-info a {
+    font-size: .9rem;
 }
 
 .contact-info h2 {
@@ -403,9 +407,13 @@ footer {
     }
 
     .contact-info {
-        padding: 100px;
+        padding: 50px;
         max-width: max-content;
         transform: translateX(-150px);
+    }
+
+    .contact-info a {
+        font-size: 1rem;
     }
 
     #scrollBtn {
